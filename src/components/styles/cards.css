@@ -1,0 +1,88 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); */
+
+.head-title {
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.cards {
+    position: relative;
+    height: 100%;
+  margin-top: 0px;
+  padding: 0;
+  width: 100%;
+  --cardWidth: 18vw;
+  --cardHeight: 42vh;
+  --cardMargin: 1em;
+}
+
+  .main-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: var(--cardWidth);
+    height: var(--cardHeight);
+    margin: var(--cardMargin);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1px;
+    box-sizing: border-box;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.562);
+  }
+
+  .overlay:active + .card, 
+ .card:active {
+          box-shadow: none;
+          transform: translateY(4px);
+  }
+
+  .card-container {
+    position: relative;
+  }
+
+  .title {
+    position: absolute;
+    font-family: 'Great Vibes', cursive;
+    top: 100px;
+    width: 100%;
+    padding: 30px;
+  left: 0;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 53px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px black;
+    z-index: 2;
+    cursor: pointer; 
+  }
+
+  .title:hover + .overlay,
+  .overlay:hover {
+           box-shadow: none;
+   }
+
+ .overlay {
+    position: absolute; /* Sit on top of the page content */
+  width: 91%; /* Full width (cover the whole page) */
+  height: 90%; /* Full height (cover the whole page) */
+  top: 17.5px;
+  left: 17px;
+  right: 0px;
+  bottom: 0px;
+  /* background: rgba(255, 255, 255, 0.411); */
+  background-image: linear-gradient(to right, rgba(206, 5, 5, 0.603) , rgba(4, 167, 167, 0.603));
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  }
+
+  .overlay:hover {
+    background-image: linear-gradient(to right, rgba(253, 36, 36, 0.603) , rgba(3, 187, 187, 0.603));
+  }
+
+  .overlay:active {
+    transform: translateY(4px);
+  }
