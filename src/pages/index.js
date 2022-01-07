@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import "../components/styles/style.css"
 import Image from "../assets/images/image.jpg"
 import ImageTwo from "../assets/images/image2.jpg"
+import ImageThree from "../assets/images/image3.jpg"
 
 import Cards from "../components/cards"
 
@@ -74,8 +75,13 @@ const IndexPage = () => {
     </div>
     </div>
     <Cards />
-    <button>Learn the 7 essential elements of a submission-ready manuscript.</button>
-                <h1>So you want better results for your writing?</h1>
+    <img alt="pic3" src={ImageThree} style={{position: 'absolute',height: `50vh`, width: `25vw`, top: '0', left: '0'}}/>
+    <div className="manuscript"
+    style={{position: `relative`, height: '60vh', width: '100vw', backgroundImage: `linear-gradient(to right, rgba(206, 5, 5, 1) , rgba(4, 167, 167, 0.8))`, color: 'white', textAlign: 'center', marginTop: '250px', paddingTop: '10%', }}>
+                <h1 style={{marginBottom: `80px`, fontFamily: `'Great Vibes', cursive`, fontSize: '70px', fontWeight: '200'}}>So you want better results for your writing?</h1>
+                <h2 style={{fontFamily: `'Cormorant', serif`, fontSize: `30px`}}>Learn the 7 essential elements of a submission-ready manuscript.</h2>
+                <img alt="image3" src={ImageThree} style={{position: 'absolute',height: `60vh`, width: `100vw`, top: '0', right: '0', zIndex: `-3`}}/>
+                </div>
   </Layout>
   
     )

@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 // import Header from "./header"
 import Navigation from "./navigation"
 // import Overlay from "./overlay"
-// import Footer from "./footer"
+import Footer from "./footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -28,8 +28,7 @@ const Layout = ({ children }) => {
       <Navigation menuLinks={data.site.siteMetadata.menuLinks} />
       {/* <Overlay /> */}
               <main>{children}</main>
-
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
