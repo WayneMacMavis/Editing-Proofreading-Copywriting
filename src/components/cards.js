@@ -13,19 +13,19 @@ const cards = () => (
   <div className="cards">
   <div class="main-section">
       <div className="card-container">
-      <div className="overlay">
+      <div className="overlay-card">
       <h1 className="title">Editing</h1>
       </div>
   <img class="card" alt="pic1" src={Picone} />
       </div>
       <div className="card-container">
-      <div className="overlay">
+      <div className="overlay-card">
       <h1 className="title">Proofreading</h1>
       </div>
   <img class="card" alt="pic2" src={Pictwo} />
       </div>
       <div className="card-container">
-          <div className="overlay">
+          <div className="overlay-card">
           <h1 className="title">Document Formatting</h1>
           </div>
   <img class="card" alt="pic3" src={Picthree} />

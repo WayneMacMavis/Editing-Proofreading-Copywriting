@@ -7,29 +7,35 @@ const footer = () => (
   <div>
   <div style={{
     position: `relative`,
-    background: `aqua`,
+    background: `navy`,
     height: `120px`,
     width: `100%`,
-    // padding: `5px`,
+    paddingTop: `-100`,
     zIndex: `1`,
     margin: `0`,
   }}>
+    <div style={{position: `relative`, top: `80px`, margin: `0`, zIndex: `2`}}>
      Built by
           {` `}
-          <a href="https://web.facebook.com/Wayne.mac.mavis/">Wayne Mac Mavis</a>,
+          <a style={{color: `red`, }} href="https://web.facebook.com/Wayne.mac.mavis/">Wayne Mac Mavis</a>,
           © {new Date().getFullYear()}
-          <div style={{position: 'absolute', left: '0', textAlign: `center`,}} className="icons">
-          <a className="icon" href="https://web.facebook.com/ChantalJosephEditor" target="_blank" rel="noreferrer">
+          </div>
+          <div style={{position: `relative`, textAlign: 'center', color: 'white'}}>
+          <p style={{margin: `-10px`}}>Terms and conditions | Privacy Policy | Earning Disclaimer | Terms of Service</p>
+          <p style={{margin: `10px`}}>@2022 ChantyJoe PTY LTD</p>
+          </div>
+          <div style={{position: 'relative', textAlign: `center`, marginTop: `10px`}} className="icons">
+          <a style={{paddingRight: `15px`, fontSize: `15px`}}className="icon" href="https://web.facebook.com/ChantalJosephEditor" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faFacebookSquare} color="white" size="2x" />
           </a>
-          <a className="icon" href="/">
-          <FontAwesomeIcon icon={faInstagram} color="rgb(228,64,95)" size="2x" />
+          <a style={{paddingRight: `15px`, fontSize: `15px`}} className="icon" href="/">
+          <FontAwesomeIcon icon={faInstagram} color="white" size="2x" />
           </a>
-          <a className="icon" href="/">
-          <FontAwesomeIcon icon={faLinkedin} color="rgb(0,119,181)" size="2x" />
+          <a style={{paddingRight: `15px`, fontSize: `15px`}} className="icon" href="/">
+          <FontAwesomeIcon icon={faLinkedin} color="white" size="2x" />
           </a>
-          <a className="icon" href="/">
-          <FontAwesomeIcon icon={faYoutube} color="rgb(205,32,31)" size="2x" />
+          <a style={{fontSize: `15px`}} className="icon" href="/">
+          <FontAwesomeIcon icon={faYoutube} color="white" size="2x" />
           </a>
           </div>
           </div>

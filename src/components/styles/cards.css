@@ -33,7 +33,7 @@
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.562);
   }
 
-  .overlay:active + .card, 
+  .overlay-card:active + .card, 
  .card:active {
           box-shadow: none;
           transform: translateY(4px);
@@ -60,12 +60,12 @@
     cursor: pointer; 
   }
 
-  .title:hover + .overlay,
-  .overlay:hover {
+  .title:hover + .overlay-card,
+  .overlay-card:hover {
            box-shadow: none;
    }
 
- .overlay {
+ .overlay-card {
     position: absolute; /* Sit on top of the page content */
   width: 91%; /* Full width (cover the whole page) */
   height: 90%; /* Full height (cover the whole page) */
@@ -79,10 +79,10 @@
   cursor: pointer; /* Add a pointer on hover */
   }
 
-  .overlay:hover {
+  .overlay-card:hover {
     background-image: linear-gradient(to right, rgba(253, 36, 36, 0.603) , rgba(3, 187, 187, 0.603));
   }
 
-  .overlay:active {
+  .overlay-card:active {
     transform: translateY(4px);
   }
