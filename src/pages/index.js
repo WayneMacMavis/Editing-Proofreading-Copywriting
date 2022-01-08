@@ -14,18 +14,18 @@ import ImageThree from "../assets/images/image3.jpg"
 
 import Cards from "../components/cards"
 
-const MoveRight = ({ isVisible, children }) => {
+const FadeRight = ({ isVisible, children }) => {
   const props = useSpring({
     opacity: isVisible ? 1 : 0,
     transform: isVisible ? "translateX(0px)" : "translateX(-50%)",
     config: { 
-      duration: 900, 
+      duration: 1000, 
     },
   });
   return <animated.div style={props}>{children}</animated.div>;
 };
 
-export const FadeInContainer = ({ children }) => {
+const FadeRightContainer = ({ children }) => {
   const [isVisible, setVisibility] = useState(false);
 
   const onChange = visiblity => {
@@ -34,10 +34,38 @@ export const FadeInContainer = ({ children }) => {
 
   return (
     <VisibilitySensor onChange={onChange}>
-      <MoveRight isVisible={isVisible}>{children}</MoveRight>
+      <FadeRight isVisible={isVisible}>{children}</FadeRight>
     </VisibilitySensor>
   );
+  
 };
+
+const FadeIn = ({ isVisible, children }) => {
+  const props = useSpring({
+    opacity: isVisible ? 1 : 0,
+    config: { 
+      duration: 900, 
+    },
+    delay: 700,
+  });
+  return <animated.div style={props}>{children}</animated.div>;
+};
+
+const FadeInContainer = ({ children }) => {
+  const [isVisible, setVisibility] = useState(false);
+
+  const onChange = visiblity => {
+    visiblity && setVisibility(visiblity);
+  };
+
+  return (
+    <VisibilitySensor onChange={onChange}>
+      <FadeIn isVisible={isVisible}>{children}</FadeIn>
+    </VisibilitySensor>
+  );
+  
+};
+
 const IndexPage = () => {
   const [modal, setModal] = useState(false);
 
@@ -59,15 +87,14 @@ const IndexPage = () => {
       display: `flex`,
       alignItems: `center`,
       justifyContent: `center`,
-    position: `relative`,
+      position: `relative`,
     width: `100vw`,
-    height: `90vh`,
+    height: `20vh`,
     top: `0`,
     right: `0`,
     bottom: `0`,
     left: `0`,
     backgroundPosition: `center`,
-    overflow: `hidden`,
     }}>
   <img src={Image} alt="Hello"
     style={{
@@ -80,7 +107,7 @@ const IndexPage = () => {
     <animated.div style={fadeIn}>
     <h1 style={{
       position: `absolute`,
-      bottom: `15vh`,
+      bottom: `-40vh`,
       right: `0px`,
       paddingLeft: `55px`,
       paddingTop: `35px`,
@@ -99,7 +126,8 @@ const IndexPage = () => {
       </animated.div>
     </div>
     <div>
-    <div style={{height: `100vh`, width: `100vw`, left: `0px`, top: `400px`, display: `flex`, flexDirection: `row-reverse`, flexWrap: `wrap`, justifyContent: `center`, alignItems: `center`}}>
+    <div style={{position: `relative`, height: `100vh`, width: `100vw`, left: `0px`, top: `600px`, display: `flex`, flexDirection: `row-reverse`, flexWrap: `wrap`, justifyContent: `center`, alignItems: `center`}}>
+      <FadeInContainer>
         <div>
     <img src={ImageTwo} alt="Hello"
     style={{
@@ -108,8 +136,9 @@ const IndexPage = () => {
     }}>
     </img>
     </div>
-    <FadeInContainer>
-    <div style={{width: `20vw`,  marginRight: `150px`, top: `200px`}}>
+    </FadeInContainer>
+    <FadeRightContainer>
+    <div style={{position: `relative`, width: `20vw`,  marginRight: `150px`, top: `0px`}}>
     <h1 style={{fontFamily: `'Source Serif Pro', serif`, fontSize: `31px`, color: `grey`,}}>You want your audience to focus on your message, not your mistakes. </h1>
   <p>As your ambassador, your editor will help you with this. She’ll protect your credibility and your unique style of writing.
   The alternative? You could skip the editing stage. But distracting language errors and inconsistencies create the impression that you don’t respect your reader. Or worse, that you’re incompetent!
@@ -118,7 +147,7 @@ const IndexPage = () => {
   <a style={{color: 'red'}} className="content-link" 
   href="mailto:chantaljosepheditor@gmail.com" type="email" name="email" rel="reply-to" autoComplete="email">Email me for an obligation-free quote.</a>
   </div>
-  </FadeInContainer>
+  </FadeRightContainer>
     </div>
     </div>
     <Cards />
@@ -129,7 +158,7 @@ const IndexPage = () => {
                 <h2 style={{marginBottom: `80px`, fontFamily: `'Great Vibes', cursive`, fontSize: '70px', fontWeight: '200'}}>So you want better results for your writing?</h2>
                 <button style={{fontFamily: `'Cormorant', serif`, fontSize: `30px`, border: `none`, background: `none`, cursor: `pointer`, margin: `0`, color: `white`,}} onClick={() => {setModal(true)}}>Learn the 7 essential elements of a submission-ready manuscript.</button>
             </animated.header>
-                <img alt="image3" src={ImageThree} style={{position: 'absolute',height: `60vh`, width: `100vw`, top: '0', right: '0', zIndex: `-3`}}/>
+                <img alt="image3" src={ImageThree} style={{position: 'absolute',height: `60vh`, width: `60vw`, top: '0', right: '0', zIndex: `-3`}}/>
                 
                
                 </div>

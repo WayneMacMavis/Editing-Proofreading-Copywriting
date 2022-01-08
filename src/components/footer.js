@@ -20,11 +20,11 @@ const footer = () => (
           <a style={{color: `red`, }} href="https://web.facebook.com/Wayne.mac.mavis/">Wayne Mac Mavis</a>,
           © {new Date().getFullYear()}
           </div>
-          <div style={{position: `relative`, textAlign: 'center', color: 'white'}}>
+          <div style={{position: `relative`, textAlign: 'center', color: 'white', zIndex: `10`}}>
           <p style={{margin: `-10px`}}>Terms and conditions | Privacy Policy | Earning Disclaimer | Terms of Service</p>
           <p style={{margin: `10px`}}>@2022 ChantyJoe PTY LTD</p>
           </div>
-          <div style={{position: 'relative', textAlign: `center`, marginTop: `10px`}} className="icons">
+          <div style={{position: 'relative', textAlign: `center`, marginTop: `10px`, zIndex: `10`,}} className="icons">
           <a style={{paddingRight: `15px`, fontSize: `15px`}}className="icon" href="https://web.facebook.com/ChantalJosephEditor" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faFacebookSquare} color="white" size="2x" />
           </a>
