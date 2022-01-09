@@ -16,6 +16,7 @@
 
 .container {
     display: flex;
+    -webkit-justify-content: right;
     justify-content: right;
     padding: 25px;
     font-size: 22px;

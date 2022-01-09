@@ -130,7 +130,7 @@ const IndexPage = () => {
       </animated.div>
     </div>
     <div>
-    <div style={{height: `100vh`, width: `100vw`, left: `0px`, top: `0px`, marginTop: `450px`, display: `flex`, flexDirection: `row-reverse`, flexWrap: `wrap`, justifyContent: `center`, alignItems: `center`}}>
+    <div style={{height: `100vh`, width: `100vw`, left: `0px`, marginTop: `-100px`, display: `flex`, flexDirection: `row-reverse`, flexWrap: `wrap`, webkitJustifyContent: `center`, justifyContent: `center`, alignItems: `center`}}>
       <FadeInContainer>
         <div>
     <img src={ImageTwo} alt="Hello"
