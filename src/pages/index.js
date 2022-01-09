@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import VisibilitySensor from "react-visibility-sensor";
+import VisibilitySensor from "react-visibility-sensor"
 import { useSpring, animated } from "react-spring"
 
 import Modal from '../components/Modal';
@@ -13,13 +13,14 @@ import ImageTwo from "../assets/images/image2.jpg"
 import ImageThree from "../assets/images/image3.jpg"
 
 import Cards from "../components/cards"
+import "../components/styles/index.css"
 
 const FadeRight = ({ isVisible, children }) => {
   const props = useSpring({
     opacity: isVisible ? 1 : 0,
-    transform: isVisible ? "translateX(0px)" : "translateX(-50%)",
+    transform: isVisible ? "translateX(0px)" : "translateX(-30%)",
     config: { 
-      duration: 1000, 
+      duration: 600, 
     },
   });
   return <animated.div style={props}>{children}</animated.div>;
@@ -44,9 +45,9 @@ const FadeIn = ({ isVisible, children }) => {
   const props = useSpring({
     opacity: isVisible ? 1 : 0,
     config: { 
-      duration: 900, 
+      duration: 600, 
     },
-    delay: 700,
+    delay: 200,
   });
   return <animated.div style={props}>{children}</animated.div>;
 };
@@ -89,7 +90,7 @@ const IndexPage = () => {
       justifyContent: `center`,
       position: `relative`,
     width: `100vw`,
-    height: `20vh`,
+    height: `35vh`,
     top: `0`,
     right: `0`,
     bottom: `0`,
@@ -126,7 +127,7 @@ const IndexPage = () => {
       </animated.div>
     </div>
     <div>
-    <div style={{position: `relative`, height: `100vh`, width: `100vw`, left: `0px`, top: `600px`, display: `flex`, flexDirection: `row-reverse`, flexWrap: `wrap`, justifyContent: `center`, alignItems: `center`}}>
+    <div style={{height: `100vh`, width: `100vw`, left: `0px`, top: `0px`, marginTop: `450px`, display: `flex`, flexDirection: `row-reverse`, flexWrap: `wrap`, justifyContent: `center`, alignItems: `center`}}>
       <FadeInContainer>
         <div>
     <img src={ImageTwo} alt="Hello"
@@ -153,11 +154,11 @@ const IndexPage = () => {
     <Cards />
     <div className="manuscript"
     style={{ position: `relative`, height: '60vh', width: '100vw', backgroundImage: `linear-gradient(to right, rgba(206, 5, 5, 1) , rgba(4, 167, 167, 0.8))`, color: 'white', textAlign: 'center', marginTop: '150px', paddingTop: '10%', }}>
-                <animated.header config={{duration: 1000000}}>
               {modal && <Modal closeModal={setModal} />}
+              <FadeInContainer>
                 <h2 style={{marginBottom: `80px`, fontFamily: `'Great Vibes', cursive`, fontSize: '70px', fontWeight: '200'}}>So you want better results for your writing?</h2>
-                <button style={{fontFamily: `'Cormorant', serif`, fontSize: `30px`, border: `none`, background: `none`, cursor: `pointer`, margin: `0`, color: `white`,}} onClick={() => {setModal(true)}}>Learn the 7 essential elements of a submission-ready manuscript.</button>
-            </animated.header>
+                <button className="modal-btn" style={{fontFamily: `'Cormorant', serif`, fontSize: `30px`, background: `none`, cursor: `pointer`, margin: `0`}} onClick={() => {setModal(true)}}>Learn the 7 essential elements of a submission-ready manuscript.</button>
+                </ FadeInContainer>
                 <img alt="image3" src={ImageThree} style={{position: 'absolute',height: `60vh`, width: `60vw`, top: '0', right: '0', zIndex: `-3`}}/>
                 
                

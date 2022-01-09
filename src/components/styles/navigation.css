@@ -37,10 +37,11 @@
 }
 
 .nav-links:hover {
+    position: relative;
     color: red;
     background: rgba(4, 167, 167, 0.404);
-    width: 100px;
-    height: 100px;
+    /* width: 100px; */
+    /* height: 100px; */
 }
 
 ul {
@@ -65,4 +66,5 @@ li {
       font-size: 35px;
       font-weight: 500;
       color: rgb(4, 167, 167);
+      height: 10px;
   }
