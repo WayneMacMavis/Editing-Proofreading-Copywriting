@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Editing, Copywriting, Proofreading`,
+    title: `Editing | Copywriting | Proofreading`,
     description: `Professional business page for all your editorial needs`,
     author: `@Wayne Mac Mavis`,
     menuLinks:[

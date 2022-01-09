@@ -90,7 +90,7 @@ const IndexPage = () => {
       justifyContent: `center`,
       position: `relative`,
     width: `100vw`,
-    height: `35vh`,
+    height: `100vh`,
     top: `0`,
     right: `0`,
     bottom: `0`,
@@ -99,8 +99,11 @@ const IndexPage = () => {
     }}>
   <img src={Image} alt="Hello"
     style={{
+      position: `relative`,
       overflow: `hidden`,
       objectFit: `cover`,
+      height: `82vh`, 
+      width: `100%`,
       top: `0`,
       left: `0`,
     }}>
@@ -108,7 +111,7 @@ const IndexPage = () => {
     <animated.div style={fadeIn}>
     <h1 style={{
       position: `absolute`,
-      bottom: `-40vh`,
+      bottom: `25vh`,
       right: `0px`,
       paddingLeft: `55px`,
       paddingTop: `35px`,

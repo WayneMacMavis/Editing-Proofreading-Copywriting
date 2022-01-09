@@ -3,6 +3,7 @@
 
 .navigation {
     position: fixed;
+    text-align: -webkit-center;
     text-align: center;
     top: 0px;
     height: 70px;
