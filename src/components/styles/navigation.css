@@ -19,6 +19,7 @@
     -webkit-justify-content: right;
     justify-content: right;
     right: 0px;
+    margin-right: 0px;
     padding: 25px;
     font-size: 22px;
 }
