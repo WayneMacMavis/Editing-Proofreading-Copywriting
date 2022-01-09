@@ -15,12 +15,9 @@
 }
 
 .container {
-    position: relative;
     display: flex;
     -webkit-justify-content: right;
     justify-content: right;
-    right: 0px;
-    margin-right: 0px;
     padding: 25px;
     font-size: 22px;
 }
@@ -35,6 +32,7 @@
     color: black;
     border-radius: 3px;
     padding: 10px;
+    right: 5px;
     bottom: 10px;
     text-decoration: none;
     text-shadow: 1px 1px 1px black;
