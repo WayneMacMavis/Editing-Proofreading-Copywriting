@@ -156,7 +156,7 @@ const IndexPage = () => {
     </div>
     <Cards />
     <div className="manuscript"
-    style={{ position: `relative`, height: '60vh', width: '100vw', backgroundImage: `linear-gradient(to right, rgba(1, 109, 109, 1) , rgba(122, 120, 120, 0.8))`, color: 'white', textAlign: 'center', marginTop: '150px', paddingTop: '10%', }}>
+    style={{ position: `relative`, height: '60vh', width: '100vw', backgroundImage: `linear-gradient(to right, rgba(1, 109, 109, 1) , rgba(255, 177, 216, 0.8))`, color: 'white', textAlign: 'center', marginTop: '150px', paddingTop: '10%', }}>
               {modal && <Modal closeModal={setModal} />}
               <FadeInContainer>
                 <h2 style={{marginBottom: `80px`, fontFamily: `'Great Vibes', cursive`, fontSize: '70px', fontWeight: '200'}}>So you want better results for your writing?</h2>

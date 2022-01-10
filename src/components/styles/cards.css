@@ -71,13 +71,13 @@
   left: 17px;
   right: 0px;
   bottom: 0px;
-  background-image: linear-gradient(to right, rgba(1, 109, 109, 0.658) , rgba(122, 120, 120, 0.562));
+  background-image: linear-gradient(to right, rgba(1, 109, 109, 0.8) , rgba(255, 177, 216, 0.562));
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
   }
 
   .overlay-card:hover {
-    background-image: linear-gradient(to right, rgba(0, 167, 167, 0.658) , rgba(187, 187, 187, 0.562));
+    background-image: linear-gradient(to right, rgba(0, 158, 158, 0.8) , rgba(247, 207, 227, 0.562));
   }
 
   .overlay-card:active {

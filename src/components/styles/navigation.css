@@ -44,7 +44,7 @@
 .nav-links:hover {
     position: relative;
     color: teal;
-    background: rgba(4, 167, 167, 0.404);
+    background: rgba(255, 177, 216, 0.4);
     /* width: 100px; */
     /* height: 100px; */
 }
@@ -61,7 +61,7 @@ li {
 
 .active {
     text-decoration: underline;
-    color: teal;
+    color: rgb(255, 177, 216);
   }
 
   .navsite {
