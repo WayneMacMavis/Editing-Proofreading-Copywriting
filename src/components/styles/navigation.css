@@ -10,7 +10,7 @@
     width: 100%;
     background: white;
     overflow: hidden;
-    border: 1px solid red;
+    border: 1px solid teal;
     z-index: 10000000;
 }
 
@@ -43,7 +43,7 @@
 
 .nav-links:hover {
     position: relative;
-    color: red;
+    color: teal;
     background: rgba(4, 167, 167, 0.404);
     /* width: 100px; */
     /* height: 100px; */
@@ -61,15 +61,15 @@ li {
 
 .active {
     text-decoration: underline;
-    color: black;
+    color: teal;
   }
 
   .navsite {
       position: absolute;
-      left: 800px;
+      left: 10px;
       font-family: 'Pinyon Script', cursive;
       font-size: 35px;
       font-weight: 500;
-      color: rgb(4, 167, 167);
+      color: navy;
       height: 10px;
   }

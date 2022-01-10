@@ -16,7 +16,7 @@ const Navigation = ({ menuLinks }) => {
                 <li
                   key={link.name}
                 >
-                  <Link className="nav-links" to={link.link} activeStyle={{color: 'red', textDecoration: 'underline'}}>
+                  <Link className="nav-links" to={link.link} activeStyle={{color: 'teal', textDecoration: 'underline'}}>
                     {link.name}
                   </Link>
                 </li>
