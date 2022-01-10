@@ -15,6 +15,7 @@
 }
 
 .container {
+    display: -webkit-flex;
     display: flex;
     -webkit-justify-content: right;
     justify-content: right;
@@ -64,7 +65,7 @@ li {
 
   .navsite {
       position: absolute;
-      left: 80px;
+      left: 800px;
       font-family: 'Pinyon Script', cursive;
       font-size: 35px;
       font-weight: 500;
