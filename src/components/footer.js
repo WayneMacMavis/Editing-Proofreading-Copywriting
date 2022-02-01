@@ -22,7 +22,7 @@ const footer = () => (
           </div>
           <div style={{position: `relative`, textAlign: 'center', color: 'white', zIndex: `10`}}>
           <p style={{margin: `-10px`}}>Terms and conditions | Privacy Policy | Earning Disclaimer | Terms of Service</p>
-          <p style={{margin: `10px`}}>@2022 ChantyJoe PTY LTD</p>
+          <p style={{margin: `10px`}}>@2022 Chantal J PTY LTD</p>
           </div>
           <div style={{position: 'relative', textAlign: `center`, marginTop: `10px`, zIndex: `10`,}} className="icons">
           <a style={{paddingRight: `15px`, fontSize: `15px`}}className="icon" href="https://web.facebook.com/ChantalJosephEditor" target="_blank" rel="noreferrer">
