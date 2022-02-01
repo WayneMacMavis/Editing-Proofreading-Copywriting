@@ -1,10 +1,1 @@
-.modal-btn {
-    color: white;
-    border: none;
-}
-
-.modal-btn:hover {
-    color: rgb(0, 217, 255);
-    border-bottom: 1px solid rgb(0, 217, 255);
-    
-}
+.modal-btn{color:#fff;border:none}.modal-btn:hover{color:#00d9ff;border-bottom:1px solid #00d9ff}

@@ -121,7 +121,8 @@ const IndexPage = () => {
       textAlign: `center`,
       fontSize: `80px`,
       fontWeight: `200`,
-      background: `teal`,
+      borderRadius: `5px`,
+      background: `rgb(204, 0, 0)`,
       color: `white`,
       fontFamily: `'Great Vibes', cursive`,
       opacity: `0.8`,
@@ -148,7 +149,7 @@ const IndexPage = () => {
   The alternative? You could skip the editing stage. But distracting language errors and inconsistencies create the impression that you don’t respect your reader. Or worse, that you’re incompetent!
   Working with an inexperienced editor is just as risky. If she over-edits your work, this will water down your persona and make it harder to distinguish yourself from competitors.
   The solution? Team up with a certified word nerd with expertise in your genre. If that’s marketing, academia or non-fiction, I can help!</p>
-  <a style={{color: 'teal'}} className="content-link" 
+  <a style={{color: 'rgb(204, 0, 0)'}} className="content-link" 
   href="mailto:chantaljosepheditor@gmail.com" type="email" name="email" rel="reply-to" autoComplete="email">Email me for an obligation-free quote.</a>
   </div>
   </FadeRightContainer>
@@ -156,13 +157,13 @@ const IndexPage = () => {
     </div>
     <Cards />
     <div className="manuscript"
-    style={{ position: `relative`, height: '60vh', width: '100vw', backgroundImage: `linear-gradient(to right, rgba(1, 109, 109, 1) , rgba(255, 177, 216, 0.8))`, color: 'white', textAlign: 'center', marginTop: '150px', paddingTop: '10%', }}>
+    style={{ position: `relative`, height: '60vh', width: '100vw', backgroundImage: `linear-gradient(to right, rgba(170, 0, 0, 1) , rgba(0,128,128,0.4))`, color: 'white', textAlign: 'center', marginTop: '150px', paddingTop: '10%', }}>
               {modal && <Modal closeModal={setModal} />}
               <FadeInContainer>
                 <h2 style={{marginBottom: `80px`, fontFamily: `'Great Vibes', cursive`, fontSize: '70px', fontWeight: '200'}}>So you want better results for your writing?</h2>
                 <button className="modal-btn" style={{fontFamily: `'Cormorant', serif`, fontSize: `30px`, background: `none`, cursor: `pointer`, margin: `0`}} onClick={() => {setModal(true)}}>Learn the 7 essential elements of a submission-ready manuscript.</button>
                 </ FadeInContainer>
-                <img alt="image3" src={ImageThree} style={{position: 'absolute',height: `60vh`, width: `60vw`, top: '0', right: '0', zIndex: `-3`}}/>
+                <img alt="image3" src={ImageThree} style={{position: 'absolute',height: `70vh`, width: `75vw`, top: '0', right: '0', zIndex: `-3`,}}/>
                 
                
                 </div>

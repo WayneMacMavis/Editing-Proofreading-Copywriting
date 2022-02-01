@@ -9,12 +9,9 @@ import Seo from "../components/seo"
 const contactPage = () => (
   <Layout>
     <Seo title="Page five" />
-    <div style={{
-      position: `relative`,
-      height: `90vh`,
-      width: `100vw`,
-      zIndex: `0`,}} >
-<h1>Hello from the contact page</h1>
+    <div style={{position: `relative`, width: `100vw`, height: `100vh`, backgroundImage: `linear-gradient(to right, white , yellow, purple)`,}}>
+    <h1>Hi from the fifth page</h1>
+    <p>Welcome to page 5</p>
     </div>
   </Layout>
 )
